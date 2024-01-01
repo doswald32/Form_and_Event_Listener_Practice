@@ -8,60 +8,79 @@
             <div id="subcontainer">
                 <h2>Play around with the options below</h2>
                 <form action="http://www.example.com/subscribe.php" method="get">
+                    
                     <!--TEXT INPUT-->
-                    <p>Username: 
-                        <input type="text" name="name"/>
-                    </p>
-                    
+                    <div id="text-input-container">
+                        <p>Username: 
+                            <input type="text" name="name"/>
+                        </p>
+                    </div>
+
                     <!--PASSWORD INPUT-->
-                    <p>Password: 
-                        <input type="password" name="passsword"/>
-                    </p>
-                    
+                    <div id="password-input-container">
+                        <p>Password: 
+                            <input type="password" name="passsword"/>
+                        </p>
+                    </div>
+
                     <!--TEXT AREA-->
                     <!--use JS to clear the info in the textarea when clicks-->
-                    <p>Tell us about yourself!</p>
-                    <textarea name="comments">Enter comments here...</textarea>
-                    
+                    <div id="text-area-container">   
+                        <p>Tell us about yourself!</p>
+                        <textarea name="comments">Enter comments here...</textarea>
+                    </div>
+
                     <!--RADIO BUTTON-->
                     <!--Figure out how to clear options after selected-->
-                    <p>Choose an option...</p>
-                    <input type="radio" name="radio" value="Option A"/>Option A
-                    <input type="radio" name="radio" value="Option B"/>Option B
-                    <input type="radio" name="radio" value="Option C"/>Option C
-                    
+                    <div id="radio-container">
+                        <p>Choose an option...</p>
+                        <input class="radio" type="radio" name="radio" value="Option A"/>Option A
+                        <input class="radio" type="radio" name="radio" value="Option B"/>Option B
+                        <input class="radio" type="radio" name="radio" value="Option C"/>Option C
+                    </div>
+
                     <!--CHECKBOX-->
-                    <p>Choose another option...</p>
-                    <input type="checkbox" name="checkbox" value="Option 1"/>Option 1
-                    <input type="checkbox" name="checkbox" value="Option 2"/>Option 2
-                    <input type="checkbox" name="checkbox" value="Option 3"/>Option 3
-                    
+                    <div id="checkbox-container">
+                        <p>Choose another option...</p>
+                        <input type="checkbox" name="checkbox" value="Option 1"/>Option 1
+                        <input type="checkbox" name="checkbox" value="Option 2"/>Option 2
+                        <input type="checkbox" name="checkbox" value="Option 3"/>Option 3
+                    </div>
+
                     <!--PICKLIST-->
+                    <div id="picklist-container">
                         <p>How many cars do you own?</p>
-                    <select name="cars">
-                        <option value="one">One</option>
-                        <option value="two">Two</option>
-                        <option value="three">Three</option>
-                    </select>
+                        <select name="cars">
+                            <option value="one">One</option>
+                            <option value="two">Two</option>
+                            <option value="three">Three</option>
+                        </select>
+                    </div>
                     
                     <!--MULTIPLE PICKLIST-->
-                    <p>Which of the following activiites do you participate in?</p>
-                    <select name="sports" size="6" multiple="multiple">
-                        <option value="Running">Running</option>
-                        <option value="Cycling">Cycling</option>
-                        <option value="Skiing">Skiing</option>
-                        <option value="Mountain-Biking">Mountain Biking</option>
-                        <option value="Snowboarding">Snowboarding</option>
-                    </select>
+                    <div id="multiple-picklist-container">
+                        <p>Which of the following activiites do you participate in?</p>
+                        <select name="sports" size="6" multiple="multiple">
+                            <option value="Running">Running</option>
+                            <option value="Cycling">Cycling</option>
+                            <option value="Skiing">Skiing</option>
+                            <option value="Mountain-Biking">Mountain Biking</option>
+                            <option value="Snowboarding">Snowboarding</option>
+                        </select>
+                    </div>  
 
                     <!--FILE INPUT BOX-->
-                    <p>Upload Image</p>
-                    <input type="file" name="Picture"/>
+                    <div id="file-input-container">
+                        <p>Upload Image</p>
+                        <input type="file" name="Picture"/>
+                    </div>  
 
                     <!--SUBMIT BUTTON-->
-                    <p>Suscribe to our email list!</p>
-                    <input type="text" name="email"/>
-                    <input type="submit" name="subscribe" value="Subscribe"/>
+                    <div id="submit-button-container">
+                        <p>Suscribe to our email list!</p>
+                        <input type="text" name="email"/>
+                        <input type="submit" name="subscribe" value="Subscribe"/>
+                    </div>
                 </form>
             </div>
         </div>
